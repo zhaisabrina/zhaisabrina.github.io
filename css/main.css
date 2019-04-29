@@ -162,14 +162,16 @@ hr {
     float: left;
 }
 h1 {
-    font-size: 24px;
+    font-size: 24;
     font-weight: bold;
+    text-transform: uppercase;
 }
 h2 {
     font-size: 22px;
 }
 h3 {
     font-size: 20px;
+    font-weight: bold;
 }
 h4 {
     font-size: 18px;
@@ -1672,7 +1674,7 @@ ul.sub-menu li a {
     width: 100%;
 }
 .our-story-content {
-    background-color: #9CDBDA;
+    background-color: #C4EAEA;
     margin-top: 50px;
     height: 400px;
     display: table;
@@ -2351,7 +2353,7 @@ span.press {
     color: #9CDBDA;
 }
 .single-portfolio-wrapper {
-    margin-top: 50px
+    margin-top: 150px
 }
 .single-portfolio-wrapper span.info {
     font-size: 14px;
