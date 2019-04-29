@@ -1992,6 +1992,16 @@ ul.client-thumb-2 li a img:hover{
 .mix .img {
     margin-bottom: 30px;
 }
+.imgs img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -o-transition: opacity 0.35s, -o-transform 0.35s;
+}
+
 .img img {
     display: block;
     margin: auto;
