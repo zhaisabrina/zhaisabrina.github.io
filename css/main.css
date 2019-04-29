@@ -2930,6 +2930,8 @@ input[type="text"] {
 }
 .footer-content p {
     color: #787878;
+    font-size: 12px;
+    line-height: 20px;
 }
 .footer-content h4 {
     font-weight: 700;
@@ -2946,6 +2948,7 @@ ul.social-media {
     text-align: center;
 }
 ul.social-media li {
+    font-size: 16px;
     list-style-type: none;
     display: inline;
     padding: 5px;
@@ -2957,7 +2960,7 @@ ul.social-media li a i:hover {
     color: #9CDBDA;
 }
 .copyright-mark {
-    margin-top: 50px;
+    margin-top: 30px;
     display: block;
     text-align: center;
     color: #787878;
