@@ -468,11 +468,12 @@ button, input, select, textarea, label {
 	float: left;
 	/*min-height: 55px;	*/
 	/*padding: 0 15px 5px; */
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 800;
 	font-family: Frank Ruhl Libre, serif;
-	letter-spacing: 0;
+	letter-spacing: 1;
 	text-transform: uppercase;
+	margin-top: 17px;
 	
 }
 .navbar-logo:hover{
@@ -921,23 +922,27 @@ button, input, select, textarea, label {
 }
 .button-primary {
 	background: #ff796a;
-	background: linear-gradient(65deg, #FF9083 0, #FF6250 100%)
+	/*background: linear-gradient(65deg, #FF9083 0, #FF6250 100%)*/
+	/*background:linear-gradient(65deg, #6ebc70 0, #4f9347 100%)*/	
+	background: linear-gradient(65deg, #56b158 0, #92da89 100%)
 }
 .button-primary:hover {
 	background: #ff7e6f;
-	background: linear-gradient(65deg, #ff9588 0, #ff6755 100%)
+	/*background: linear-gradient(65deg, #ff9588 0, #ff6755 100%)*/
+	/*background:linear-gradient(65deg, #6ebc70 0, #4f9347 100%)*/
+	background: linear-gradient(65deg, #56b158 0, #92da89 100%)
 }
 .button-primary.button-shadow::before {
-	box-shadow: 0 8px 16px rgba(255, 144, 131, 0.25)
+	box-shadow: 0 8px 16px rgba(233, 240, 216, 0.25)
 }
 .button-primary.button-shadow:hover::before {
-	box-shadow: 0 8px 16px rgba(255, 144, 131, 0.4)
+	box-shadow: 0 8px 16px rgba(233, 240, 216, 0.4)
 }
 .button-primary .button-sm.button-shadow::before {
-	box-shadow: 0 4px 16px rgba(255, 144, 131, 0.25)
+	box-shadow: 0 4px 16px rgba(233, 240, 216, 0.25)
 }
 .button-primary .button-sm.button-shadow:hover::before {
-	box-shadow: 0 4px 16px rgba(255, 144, 131, 0.4)
+	box-shadow: 0 4px 16px rgba(233, 240, 216, 0.4)
 }
 .button-block {
 	display: flex
