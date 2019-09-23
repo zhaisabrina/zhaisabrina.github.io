@@ -3,10 +3,35 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sabrina Zhai :: Play</title>
+    <title>Sabrina Zhai</title>
     <meta name="description" content="">
     <meta name="msapplication-tap-highlight" content="yes" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,600,700|Frank+Ruhl+Libre:700" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="dist/js/main.min.js"></script>
+    
+
+     <!-- Imported from old nav bar  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- (bootstrap website startfiles) -->
+
+    <!-- /container -->
+    <script src="js/classie.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <script src="js/modernizer.custom.js"></script>
 
     <!-- Google Web Font -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
@@ -42,8 +67,8 @@
     <link rel="stylesheet" href="css/loader-1.css">
 
     <!-- Costum Styles -->
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="favicon.ico">
@@ -54,257 +79,132 @@
 
 <body>
 
-    <!-- Preloader -->
-    <div class="cover"></div>
+<!-- Preloader -->
+<div class="cover"></div>
 
-    <div class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                     <p>SABRINA ZHAI</p>
-                </a>
-            </div>
 
-            <!-- Menu Hamburger (Default) -->
-            <button class="main-menu-indicator" id="open-button">
-                <span class="line"></span>
-            </button>
-
-            <div class="menu-wrap">
-                <div class="menu-content">
-                <div class="navigation">
-                    <span class="pe-7s-close close-menu" id="close-button"></span>
+<div class="header">
+    <div class="container">
+        <nav class = "navbar navbar-inverse">
+                <div class = "navbar-header">
+                    <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navigationBar">
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                    </button>
                    
-                </div>
-                <nav class="menu">
-                    <div class="menu-list">
-                        <ul>
-                            <li class="menu-item-has-children"><a href="#">Work</a></li>
-                            <!-- <li class="menu-item-has-children"><a href="portfolio-3column.html">Play</a></li> -->
-                            <li class="menu-item-has-children"><a href="about.html">About</a></li>
-                            <li class="menu-item-has-children"><a href="resume.html">Resume</a></li>
-                        </ul>
+                    <div class="logo">
+                        <a href="index.html"> <p>SABRINA ZHAI</p> </a>
                     </div>
+                </div>
+
+                <div class = "collapse navbar-collapse" id = "navigationBar">
+                    <nav class="cl-effect-4">
+                        <!-- <ul style = "list-style-type: none; "> -->
+                        <ul class = "nav navbar-nav navbar-right">
+                            <li><a href = "index.html">Work</a></li>
+                            <li class = "active"><a href = "play.html">Play</a></li>
+                            <li><a href = "about.html">About</a></li>
+                        </ul>
                 </nav>
-
-                <div class="hidden-xs">
-                
-
-                    <div class="menu-information">
-                        <ul>
-                            <li><span>in:</span>@sabrinazhai</li>
-                            <li><span>e: </span> svz1999@gmail.com</li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-        </div>
-            <!-- End of Menu Hamburger (Default) -->
-
-        </div>
+        </nav>
+        <!-- End of Menu Hamburger (Default) -->
     </div>
+</div>
 
-    <!-- <div class="container">
-        <div class="header-page ef-parallax-bg" style="background-image:url(img/portfolio-header.jpg)">
-            <div class="col-md-6 col-md-offset-6">
-                <div class="row">
-                    <div class="inner-content">
-                        <div class="header-content">
-                            <h1>Portfolio</h1>
-                            <hr>
-                            <p>Everything created in simple way</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
-    <div class="container margin-top">
-        <div class="portfolio-wrapper">
-            <button class="nav">
-                <span class="icon-container">
+<div class="container margin-top">
+    <div class="portfolio-wrapper">
+        <!-- <button class="nav">
+        <span class="icon-container">
             <span class="line line01"></span>
-                <span class="line line02"></span>
-                <span class="line line03"></span>
-                <span class="line line04"></span>
-                </span>
-            </button>
-            <div class="works-filter">
-                <a href="javascript:void(0)" class="filter active" data-filter="mix">All</a>
-                <a href="javascript:void(0)" class="filter" data-filter="branding">Branding</a>
-                <a href="javascript:void(0)" class="filter" data-filter="web">Web Design</a>
-                <a href="javascript:void(0)" class="filter" data-filter="graphic">Graphic Design</a>
-            </div>
-            <div class="js-masonry">
-                <div class="row" id="work-grid">
-                    <!-- Begin of Thumbs Portfolio -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/portfolio/4.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+            <span class="line line02"></span>
+            <span class="line line03"></span>
+            <span class="line line04"></span>
+        </span> 
+        </button>
+        <div class="works-filter">
+            <a href="javascript:void(0)" class="filter active" data-filter="mix">All</a>
+            <a href="javascript:void(0)" class="filter" data-filter="branding">Branding</a>
+            <a href="javascript:void(0)" class="filter" data-filter="web">Web Design</a>
+            <a href="javascript:void(0)" class="filter" data-filter="graphic">Graphic Design</a>
+        </div> -->
+        <div class="js-masonry">
+            <div class="row" id="work-grid">
+                <!-- Begin of Thumbs Portfolio -->
+
+
+
+                <div class="col-md-6 col-sm-6 col-xs-12 mix web">
+                    <div class="img home-portfolio-image">
+                        <img src="img/Toilet Zine/Toilet 1.png" alt="Portfolio Item">
+                        <div class="overlay-thumb">
+                            <div class="details">
+                                <span class="title">Toilet Zine</span>
+                                <!-- <span class="info">Motion Graphics, Animation, AfterEffects, Spread Design, Typography</span> -->
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix web">
-                        <div class="img home-portfolio-image">
-                            <img src="img/stickers/stickers popcorn chicken.png" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                
-                                <div class="details">
-                                    <span class="title">WATCH-J</span>
-                                    <span class="info">NEW TREND FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix graphic">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_3.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_4.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">900</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_5.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">979</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_6.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">1024</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_7.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">2048</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_8.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">256</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_9.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">256</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
+                            <span class="btnBefore"></span>
+                            <span class="btnAfter"></span>
+                            <!-- <a class="main-portfolio-link" href="typeface.html"></a> -->
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="load-more">
-                <a href="javascript:void(0)" id="load-more"><i class="icon-refresh"></i></a>
+
+                <div class="col-md-6 col-sm-6 col-xs-12 mix web">
+                    <div class="img home-portfolio-image">
+                        <img src="img/Portfolio_CultureNightPoster.jpg" alt="Portfolio Item">
+                        <div class="overlay-thumb">
+                            <div class="details">
+                                <span class="title">TSA: Culture Night</span>
+                                <!-- <span class="info">Motion Graphics, Animation, AfterEffects, Spread Design, Typography</span> -->
+                            </div>
+                            <span class="btnBefore"></span>
+                            <span class="btnAfter"></span>
+                            <!-- <a class="main-portfolio-link" href="typeface.html"></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 mix web">
+                    <div class="img home-portfolio-image">
+                        <img src="img/Cover.png" alt="Portfolio Item">
+                        <div class="overlay-thumb">
+                            <div class="details">
+                                <span class="title">Playgrounds.</span>
+                                <!-- <span class="info">Motion Graphics, Animation, AfterEffects, Spread Design, Typography</span> -->
+                            </div>
+                            <span class="btnBefore"></span>
+                            <span class="btnAfter"></span>/
+                            <!-- <a class="main-portfolio-link" href="typeface.html"></a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12 mix web">
+                    <div class="img home-portfolio-image">
+                        <img src="img/Floating Islands.png" alt="Portfolio Item">
+                        <div class="overlay-thumb">
+                            <div class="details">
+                                <span class="title">floating islands zine</span>
+                                <!-- <span class="info">Motion Graphics, Animation, AfterEffects, Spread Design, Typography</span> -->
+                            </div>
+                            <span class="btnBefore"></span>
+                            <span class="btnAfter"></span>
+                            <!-- <a class="main-portfolio-link" href="typeface.html"></a> -->
+                        </div>
+                    </div>
+                </div>
+
+               
             </div>
         </div>
+        <!-- <div class="load-more">
+            <a href="javascript:void(0)" id="load-more-2col"><i class="icon-refresh"></i></a>
+        </div> -->
     </div>
+</div>
 
     
     <div class="footer margin-top">

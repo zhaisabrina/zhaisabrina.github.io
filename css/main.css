@@ -189,7 +189,7 @@ h4,
 h5,
 h6 {
     /*font-family: 'Lekton', sans-serif;*/
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     letter-spacing: 1.3pt;
     color: #111111;
     clear: both;
@@ -466,12 +466,14 @@ ul.sublist {
 
 .logo p {
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 60px;
     /*font-family: 'azedolight', sans-serif;*/
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2.5pt;
-    margin: 17px 0 17px 0;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Ubuntu';
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    /*margin: 17px 0 17px 0;*/
 }
 
 a>span.site-name{
@@ -1463,6 +1465,9 @@ ul.sub-menu li a {
 
 /* =Home Content
 -------------------------------------------------------------- */
+#index-bio{
+    width:70%;
+}
 .intro-wrapper {
     float: left;
     width: 100%;
@@ -1474,6 +1479,7 @@ ul.sub-menu li a {
     font-family: 'Ubuntu';
     font-weight: 400;
     line-height: 24px;
+    font-size: 24px;
     /*padding-top: 0px;*/
 }
 
@@ -1684,7 +1690,7 @@ ul.sub-menu li a {
 .our-story-content-inner {
     display: table-cell;
     vertical-align: middle;
-    padding: 10px;
+    padding: 40px;
 }
 
 .our-story-content-inner p {
@@ -1839,7 +1845,7 @@ ul.client-thumb-2 li a img:hover{
     background: #fff;
     cursor: pointer;
     border: none;
-    width: 48px;
+    /*width: 48px;*/
     height: 48px;
     float: left;
     position: relative;
@@ -1859,6 +1865,10 @@ ul.client-thumb-2 li a img:hover{
     -o-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
+}
+
+.nav>li{
+    margin-top: 14px;
 }
 .nav .line {
     width: 26px;
@@ -2049,7 +2059,7 @@ ul.client-thumb-2 li a img:hover{
     z-index: 4;
 }
 .img .overlay-thumb:hover {
-    background-color: rgba(255,255,255,.7);
+    background-color: rgba(255,255,255,.4);
 }
 
 .img .overlay-thumb.bg-white:hover{
@@ -2319,7 +2329,8 @@ span.press {
 }
 /* Height of portfolio */
 .home-portfolio-image {
-    height: 100%;
+    /*height: 100%;*/
+    max-height:350px;
 }
 /* Height 3 column Portfolio */
 .height-3column {
@@ -3184,6 +3195,8 @@ a img.aligncenter {
             /*font-family: 'Poppins', sans-serif;*/
             /*border-bottom: 1px solid #d6d6d6;*/
 
+            text-transform: lowercase;
+
         }
 
         .navbar-logo {
@@ -3201,9 +3214,9 @@ a img.aligncenter {
             color: #000;
             background-color: #fff;
         } 
-        .navbar-inverse .navbar-nav li a{
+        /*.navbar-inverse .navbar-nav li a{
             color:#000;
-        }
+        }*/
 
         .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
             border-color: #DFDFDF;
@@ -3241,16 +3254,32 @@ a img.aligncenter {
 
         .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
             color:#000;
+            /*padding-bottom:10px;*/
         }
 
         .nav .navbar-nav .navbar-right li{
             display: inline;
+        }
+
+        .navbar-inverse .navbar-nav>li>a{
+            font-size: 14px;
+            font-weight: 200px;
         }
         
         @media (max-width: 900px) {
             .fa {
                 font-size: 20px;
                 padding: 10px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav>li>a {
+                padding-bottom: 10px;
+                padding-right: 0px;
+                padding-left: 0px;
+                margin-right:20px;
+                margin-left:20px;
             }
         }
 
