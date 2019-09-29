@@ -1681,7 +1681,7 @@ ul.sub-menu li a {
     width: 100%;
 }
 .our-story-content {
-    background-color: #939DA6;
+    background-color: rgb(138,177,216, .8);
     margin-top: 50px;
     height: 400px;
     display: table;
