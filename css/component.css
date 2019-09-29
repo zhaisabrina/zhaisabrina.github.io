@@ -5,11 +5,11 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+/*
 body {
 	font-family: 'Raleway', sans-serif;
 }
-
+*/
 nav a {
 	position: relative;
 	display: inline-block;

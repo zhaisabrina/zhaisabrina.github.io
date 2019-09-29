@@ -146,7 +146,7 @@ small {
 p {
     color: #111111;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 1.1em;
     font-weight: 100;
     clear: both;
     letter-spacing: 0.4px;
@@ -2059,11 +2059,12 @@ ul.client-thumb-2 li a img:hover{
     z-index: 4;
 }
 .img .overlay-thumb:hover {
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(0,0,0,.4);
 }
 
 .img .overlay-thumb.bg-white:hover{
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(0,0,0,.4);
+    /*background-color: rgba(255, 255, 255, 0.65);*/
 }
 .overlay-thumb span {
     position: relative;
@@ -2077,7 +2078,8 @@ ul.client-thumb-2 li a img:hover{
 }
 .details span.title,
 .details span.info {
-    color: #111111;
+    color: #F0F0F0;
+    /*color: #111111;*/
 }
 .details span.title {
     font-size: 18px;
@@ -2117,10 +2119,10 @@ ul.client-thumb-2 li a img:hover{
     top: 0;
 }
 .overlay-thumb:hover .btnBefore {
-    border-width: 0 0 3px 3px;
+    border-width: 0 0 2px 2px;
 }
 .overlay-thumb:hover .btnAfter {
-    border-width: 3px 3px 0 0;
+    border-width: 2px 2px 0 0;
 }
 .overlay-thumb:hover .btnAfter,
 .overlay-thumb:hover .btnBefore {
@@ -2329,8 +2331,8 @@ span.press {
 }
 /* Height of portfolio */
 .home-portfolio-image {
-    /*height: 100%;*/
-    max-height:350px;
+    height: 100%;
+    /*max-height:350px;*/
 }
 /* Height 3 column Portfolio */
 .height-3column {
@@ -3303,6 +3305,12 @@ h4{
     }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    /*width: 1170px;*/
+    width: 1300px;
+  }
+
 /* mobile versions: */
 @media (max-width: 992px) {
     .carousel-caption { /*caption will not display on mobile*/
@@ -3317,10 +3325,8 @@ h4{
         font-size: 1.7em;
     }
 
-    h2{ 
-        font-size: 2.5em;
-    }
-
+    h2{     
+        =
     .fa {
         display: none;
     }
