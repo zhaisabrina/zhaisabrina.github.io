@@ -2059,11 +2059,11 @@ ul.client-thumb-2 li a img:hover{
     z-index: 4;
 }
 .img .overlay-thumb:hover {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.5);
 }
 
 .img .overlay-thumb.bg-white:hover{
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.5);
     /*background-color: rgba(255, 255, 255, 0.65);*/
 }
 .overlay-thumb span {
@@ -2082,13 +2082,13 @@ ul.client-thumb-2 li a img:hover{
     /*color: #111111;*/
 }
 .details span.title {
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: 1.2pt;
     line-height: 24px;
     text-transform: uppercase;
 }
 .details span.info {
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
 
 }
