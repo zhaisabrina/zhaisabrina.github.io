@@ -1702,7 +1702,7 @@ ul.sub-menu li a {
 .our-story-image img {
     max-width: 100%;
     height: auto;
-    outline: 8px solid white;
+    /*outline: 8px solid white;*/
     outline-offset: -20px;
 }
 /*Team*/
@@ -3313,8 +3313,8 @@ h4{
 
 @media (min-width: 1200px) {
   .container {
-    /*width: 1170px;*/
-    width: 1300px;
+    width: 120v0px;
+    /*width: 1300px;*/
   }
 
 /* mobile versions: */
