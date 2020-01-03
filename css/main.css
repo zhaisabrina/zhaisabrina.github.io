@@ -118,7 +118,7 @@ body {
 -------------------------------------------------------------- */
 
 a {
-    color: rgb(0,0,255);
+    color: #85C0C0;
     transition: all 0.5s;
 }
 a:focus {
@@ -222,6 +222,15 @@ ul.list {
 }
 ul.sublist {
     padding-left: 35px;
+}
+
+.row li {
+    color: #111111;
+    line-height: 24px;
+    font-size: 1.1em;
+    font-weight: 100;
+    clear: both;
+    letter-spacing: 0.4px;
 }
 /* =General
 -------------------------------------------------------------- */
@@ -2088,6 +2097,7 @@ ul.client-thumb-2 li a img:hover{
     /*color: #111111;*/
 }
 .details span.title {
+    
     font-size: 22px;
     letter-spacing: 1.2pt;
     line-height: 24px;
