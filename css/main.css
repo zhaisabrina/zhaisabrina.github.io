@@ -2047,8 +2047,8 @@ ul.client-thumb-2 li a img:hover{
     -o-transition: opacity 0.35s, -o-transform 0.35s;
 }
 .img:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1); /*where to change scale*/
+    transform: scale(1);
     transition: -webkit-transform 3s;
     transition: transform 0.5s;
 }
@@ -2074,11 +2074,11 @@ ul.client-thumb-2 li a img:hover{
     z-index: 4;
 }
 .img .overlay-thumb:hover {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.3);
 }
 
 .img .overlay-thumb.bg-white:hover{
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.3);
     /*background-color: rgba(255, 255, 255, 0.65);*/
 }
 .overlay-thumb span {
@@ -2408,6 +2408,17 @@ span.press {
     font-size: 14px;
     letter-spacing: 1.5px;
     padding-bottom: 25px;
+    clear: both;
+    float: left;
+}
+
+span.subtitle {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-top: 10px;
     clear: both;
     float: left;
 }
