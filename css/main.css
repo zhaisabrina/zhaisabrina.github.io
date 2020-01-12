@@ -55,6 +55,7 @@ body {
     overflow-x: hidden !important;
     -webkit-font-smoothing: antialiased;
     font-family: 'Ubuntu', sans-serif;
+    /*display: table;*/
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -134,6 +135,7 @@ a:visited {
     font-weight: 400;
     text-decoration: none;
 }
+
 em {
     font-style: italic;
 }
@@ -234,7 +236,12 @@ ul.sublist {
 }
 /* =General
 -------------------------------------------------------------- */
+.container-break {
+    width: 100vw;
+    position: relative;
+    left: calc(-1 * (100vw - 100%) / 2);
 
+}
 .clearfix {
     clear: both;
 }
@@ -1858,6 +1865,7 @@ ul.client-thumb-2 li a img:hover{
     position: relative;
     z-index: 1;
     margin-right: 25px
+    padding-top:10px;
 }
 .nav:focus {
     outline: none;
@@ -3241,6 +3249,20 @@ h4{
     font-weight: 600;
 }
 
+
+
+.title{
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #B4CFCF 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  text-decoration: none;
+  transition: background-position 0.2s ease-out;
+}
+.title:hover {
+  background-position: -99.99% 0;
+}
+
+
 .main {
     width: 80%;
     margin-left: auto;
@@ -3255,9 +3277,7 @@ h4{
     border: 0;
     /*font-family: 'Poppins', sans-serif;*/
     /*border-bottom: 1px solid #d6d6d6;*/
-
     text-transform: lowercase;
-
 }
 
 .navbar-logo {
@@ -3314,7 +3334,7 @@ h4{
     }
 
     .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
-        color:#000;
+        color:rgb(160,160,160);
         /*padding-bottom:10px;*/
     }
 
@@ -3336,7 +3356,8 @@ h4{
 
     @media (min-width: 768px) {
         .navbar-nav>li>a {
-            padding-bottom: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
             padding-right: 0px;
             padding-left: 0px;
             margin-right:20px;
