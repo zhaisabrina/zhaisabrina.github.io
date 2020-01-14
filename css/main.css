@@ -46,6 +46,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
 html {
     -webkit-font-smoothing: antialiased;
@@ -481,13 +482,20 @@ ul.sublist {
 .logo p {
     font-size: 20px;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 30px;
+    margin-top: 25px;
     /*font-family: 'azedolight', sans-serif;*/
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Ubuntu';
     letter-spacing: 2pt;
     text-transform: uppercase;
     /*margin: 17px 0 17px 0;*/
+    clear: both;
+    float: left;
+    position: relative;
+    display:inline-block;
+    display: inline;
+    background-image: linear-gradient(#fff 45%, rgb(192,220,217,.7) 30%);
 }
 
 a>span.site-name{
@@ -1883,7 +1891,7 @@ ul.client-thumb-2 li a img:hover{
 }
 
 .nav>li{
-    margin-top: 14px;
+    margin-top: 30px;
 }
 .nav .line {
     width: 26px;
@@ -2082,7 +2090,7 @@ ul.client-thumb-2 li a img:hover{
     z-index: 4;
 }
 .img .overlay-thumb:hover {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.5);
 }
 
 .img .overlay-thumb.bg-white:hover{
@@ -2420,6 +2428,10 @@ span.press {
     float: left;
 }
 
+.project-description{
+    margin-top: 8em;
+    margin-bottom: 2em;
+}
 span.subtitle {
     font-weight: bold;
     font-size: 12px;
@@ -2432,6 +2444,7 @@ span.subtitle {
     display: inline;
     background-image: linear-gradient(#fff 45%, rgba(255,151,151,.6) 30%);
 }
+
 /*span.subtitle::after {
   content: "";
   position: absolute;
@@ -2442,6 +2455,7 @@ span.subtitle {
   height: 10px;
   z-index: -1;
   }*/
+
   .table>thead>tr>th,
   .table>tbody>tr>th,
   .table>tfoot>tr>th,
@@ -2468,6 +2482,7 @@ ul.social-buttons li {
     height: auto;
     display: block;
     margin: auto;
+    margin-bottom: 6em;
 }
 .portfolio-controls {
     background: #f1f1f1;
@@ -3236,10 +3251,6 @@ a img.aligncenter {
 }
 
 
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
-
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -3249,14 +3260,13 @@ h4{
     font-weight: 600;
 }
 
-
-
 .title{
   background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #B4CFCF 50%);
   background-position: -0% 0;
   background-size: 200% auto;
   text-decoration: none;
   transition: background-position 0.2s ease-out;
+  height:50%;
 }
 .title:hover {
   background-position: -99.99% 0;
@@ -3273,10 +3283,7 @@ h4{
     border-radius: 0;
     background-color: #fff;
     padding: 1% 0;
-    /*font-size: 1em;*/
     border: 0;
-    /*font-family: 'Poppins', sans-serif;*/
-    /*border-bottom: 1px solid #d6d6d6;*/
     text-transform: lowercase;
 }
 
@@ -3291,107 +3298,129 @@ h4{
 }
 
 .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
-    /*color: #439539;*/
     color: #000;
     background-color: #fff;
 } 
-/*.navbar-inverse .navbar-nav li a{
-    color:#000;
-    }*/
 
-    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-        border-color: #DFDFDF;
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color: #DFDFDF;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+
+.btn {
+    font-size: 18px;
+    color: #000;
+    padding: 12px 22px;
+    background: #e2e2e2;
+}
+
+#icon {
+    max-width: 200px;
+    margin: 1% auto;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar{
+    background-color: #000;
+}
+.navbar-inverse .navbar-toggle{
+    border-radius: 0;
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
+    color:rgb(160,160,160);
+}
+
+.nav .navbar-nav .navbar-right li{
+    display: inline;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    font-size: 14px;
+    font-weight: 200px;
+}
+.navbar-nav>li>a{
+    line-height: 8px;
+}
+
+@media (max-width: 900px) {
+    .fa {
+        font-size: 20px;
+        padding: 10px;
     }
+}
 
-    .carousel-caption {
-        top: 50%;
-        transform: translateY(-50%);
-        text-transform: uppercase;
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right:20px;
+        margin-left:20px;
     }
+    .intro-wrapper {
+        float: left;
+        width: 65%;
+    }
+}
 
-    .btn {
-        font-size: 18px;
-        color: #000;
-        padding: 12px 22px;
-        background: #e2e2e2;
+@media (min-width: 1200px) {
+  .container {
+    width: 120v0px;
+    /*width: 1300px;*/
+}
+
+}
+
+/* mobile versions: */
+@media (max-width: 992px) {
+    .carousel-caption { /*caption will not display on mobile*/
+        display: none;
     }
 
     #icon {
-        max-width: 200px;
-        margin: 1% auto;
+        max-width: 150px;
     }
 
-    .navbar-inverse .navbar-toggle .icon-bar{
-        background-color: #000;
+    h4 {
+        font-size: 1.7em;
+    }
+
+    h2{     
+        .fa {
+            display: none;
+        }
+
+        .seminars{
+            margin-right: 0px;
+        }
     }
     .navbar-inverse .navbar-toggle{
         border-radius: 0;
         border-color: transparent;
+        margin-top:35px;
     }
-
-    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
-        background-color: #fff;
+    .intro-wrapper {
+        float: left;
+        width: 100%;
     }
-
-    .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
-        color:rgb(160,160,160);
-        /*padding-bottom:10px;*/
+    .nav>li{
+        margin-top: 0px;
+        /*padding:0px;*/s
     }
-
-    .nav .navbar-nav .navbar-right li{
-        display: inline;
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+        min-height: 130px;
     }
-
-    .navbar-inverse .navbar-nav>li>a{
-        font-size: 14px;
-        font-weight: 200px;
     }
-
-    @media (max-width: 900px) {
-        .fa {
-            font-size: 20px;
-            padding: 10px;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .navbar-nav>li>a {
-            padding-top: 0px;
-            padding-bottom: 0px;
-            padding-right: 0px;
-            padding-left: 0px;
-            margin-right:20px;
-            margin-left:20px;
-        }
-    }
-
-    @media (min-width: 1200px) {
-      .container {
-        width: 120v0px;
-        /*width: 1300px;*/
-    }
-
-    /* mobile versions: */
-    @media (max-width: 992px) {
-        .carousel-caption { /*caption will not display on mobile*/
-            display: none;
-        }
-
-        #icon {
-            max-width: 150px;
-        }
-
-        h4 {
-            font-size: 1.7em;
-        }
-
-        h2{     
-            =
-            .fa {
-                display: none;
-            }
-
-            .seminars{
-                margin-right: 0px;
-            }
-        }
+}
