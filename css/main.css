@@ -3344,7 +3344,7 @@ a img.aligncenter {
 
 
 
-.title{
+.navtitle{
   background-image: linear-gradient(to right, rgba(255,255,255) 50%, rgba(180, 207, 207, .5) 50%);
   background-position: -0% 0;
   background-size: 200% auto;
@@ -3352,7 +3352,7 @@ a img.aligncenter {
   transition: background-position 0.2s ease-out;
   height:30%;
 }
-.title:hover{
+.navtitle:hover{
   background-position: -99.99% 0;
 
 }
