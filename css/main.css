@@ -2524,16 +2524,17 @@ span.press {
     margin-bottom: 2em;
 }
 span.subtitle {
-    font-weight: bold;
-    font-size: 12px;
-    letter-spacing: .7px;
+    font-family: 'Lekton', sans-serif;
+    font-weight: 800;
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     clear: both;
     float: left;
     position: relative;
     display:inline-block;
     display: inline;
-    background-image: linear-gradient(#fff 45%, rgba(255,151,151,.6) 30%);
+    background-image: linear-gradient(transparent 45%, rgba(180, 207, 207, .5) 20%);
 }
 
 /*span.subtitle::after {
