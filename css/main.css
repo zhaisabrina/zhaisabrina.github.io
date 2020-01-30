@@ -82,8 +82,7 @@ body {
     color: #fff;
 }
 ::selection {
-    background: #C4EAEA;
-    color: #fff;
+    background: rgba(192,220,217,.5);
 }
 ::-moz-selection {
     background: #060606;
@@ -242,6 +241,26 @@ h4{
     line-height: 25px;
     font-weight: 600;
 }
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../img/CareConnect/CareConnect Presentation.png');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /* =General
 -------------------------------------------------------------- */
 .container-break {
@@ -502,7 +521,7 @@ h4{
     position: relative;
     display:inline-block;
     display: inline;
-    background-image: linear-gradient(#fff 45%, rgb(192,220,217,.5) 30%);
+    background-image: linear-gradient(#fff 45%, rgba(192,220,217,.5) 30%);
 }
 
 a>span.site-name{
@@ -1011,6 +1030,53 @@ span.border-text {
 .slider-controls a i:hover {
     color: #9CDBDA;
 }
+
+
+/* = Slide Out tab
+-------------------------------------------------------------- */
+
+#slideout {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    width: 35px;
+    padding: 12px 0;
+    text-align: center;
+    background: black;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
+}
+#slideout_inner {
+    position: fixed;
+    top: 40px;
+    right: -250px;
+    background: black;
+    width: 200px;
+    padding: 25px;
+    height: 130px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-align: left;
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+
+#slideout:hover {
+    right: 250px;
+}
+
+#slideout:hover #slideout_inner {
+    right: 0;
+}
+
 /* =Menu right
 -------------------------------------------------------------- */
 
@@ -1962,6 +2028,7 @@ ul.client-thumb-2 li a img:hover{
     z-index: 1;
     margin-right: 25px
     padding-top:10px;
+
 }
 .nav:focus {
     outline: none;
@@ -3342,8 +3409,10 @@ a img.aligncenter {
     padding-right: 7.5px;
 }
 
-
-
+.col-md-12, .col-lg-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 .navtitle{
   background-image: linear-gradient(to right, rgba(255,255,255) 50%, rgba(180, 207, 207, .5) 50%);
@@ -3367,13 +3436,14 @@ a img.aligncenter {
     margin-right: auto;
 }
 .navbar {
-    margin-bottom: 20px;
+    margin-top: 20px;
     border-radius: 0;
-    background-color: #fff;
+    background-color: transparent;
     padding: 1% 0;
     border: 0;
     text-transform: uppercase;
-
+    font-family: 'Lekton', sans-serif;
+    font-size: 1.2em;
 }
 
 
@@ -3390,7 +3460,6 @@ a img.aligncenter {
 .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
     color: #95BBBB;
     background-color: transparent;
-
 
 } 
 
