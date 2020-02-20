@@ -59,6 +59,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     /*display: table;*/
 }
+
+img { 
+    border-width: 1px;
+    border-color: rgb(220,220,220,.5);
+    border-style: solid;
+ }
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 5px;
@@ -2195,9 +2202,8 @@ ul.client-thumb-2 li a img:hover{
     overflow: hidden;
     display: inherit;
     border-width: 1px;
-    border-color: rgb(220,220,220);
-    border-style: solid;
 }
+
 .mix .img {
     margin-bottom: 30px;
 }
@@ -2212,6 +2218,7 @@ ul.client-thumb-2 li a img:hover{
 }
 
 .img img {
+
     display: block;
     margin: auto;
     max-width: 100%;
