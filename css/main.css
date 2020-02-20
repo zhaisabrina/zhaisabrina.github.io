@@ -3194,6 +3194,8 @@ input[type="text"] {
 .footer-content {
     display: table-cell;
     vertical-align: middle;
+    text-align: left;
+    padding: 1em;
 }
 .footer-content p {
     color: #787878;
