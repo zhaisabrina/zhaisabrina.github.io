@@ -1640,7 +1640,7 @@ ul.sub-menu li a {
     width: 100%;
 }
 .intro-wrapper article {
-    /*margin-top: 60px*/
+    margin-bottom: 60px;
 }
 .intro-wrapper h1 {
     font-family: 'Ubuntu';
@@ -2007,7 +2007,6 @@ ul.client-thumb-2 li a img:hover{
 }
 
 
-
 /* =Portfolio General
 -------------------------------------------------------------- */
 .portfolio-wrapper {
@@ -2195,6 +2194,9 @@ ul.client-thumb-2 li a img:hover{
     position: relative;
     overflow: hidden;
     display: inherit;
+    border-width: 1px;
+    border-color: rgb(220,220,220);
+    border-style: solid;
 }
 .mix .img {
     margin-bottom: 30px;
@@ -2332,6 +2334,7 @@ ul.client-thumb-2 li a img:hover{
 .overlay-thumb:hover .title {
     transition-delay: 0.15s;
 }
+
 .overlay-thumb:hover .info {
     transition-delay: 0.25s;
 }
@@ -3533,7 +3536,7 @@ a img.aligncenter {
 
 @media (min-width: 1200px) {
   .container {
-    width: 120v0px;
+    width: 1200px;
     /*width: 1300px;*/
 }
 
@@ -3573,10 +3576,19 @@ a img.aligncenter {
     }
     .nav>li{
         margin-top: 0px;
-        /*padding:0px;*/s
+        /*padding:0px;*/
     }
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
         min-height: 130px;
     }
+
+    .intro-wrapper article {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .details{
+        margin-left: 3em;
+    }
 }
-}
+
