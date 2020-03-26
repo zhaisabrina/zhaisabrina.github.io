@@ -94,6 +94,26 @@ Code adapted from http://elitefingers.com/
 
       gtag('config', 'UA-156098386-1');
     </script>
+
+      <style>
+  ul.nav-pills {
+    top: 20px;
+    left: 0px;
+    position: fixed;
+    background-color: transparent;
+  }
+  div.col-sm-9 div {
+    height: 250px;
+    font-size: 28px;
+  }
+
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section4, #section5  {
+      margin-left: 150px;
+    }
+  }
+  </style>
   </head>
 
   <body>
@@ -129,13 +149,32 @@ Code adapted from http://elitefingers.com/
       </div>
     </div>
 
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section4">Section 4</a></li>
+        <li><a href="#section5">Section 5</a></li>
+        
+      </ul>
+    </nav>
+    
+  </div>
+</div>
+
+</body>
 
     <!-- <div class="parallax"></div> -->
 
 
-    <div class="container">
+    <div class="container" id="section1">
       <div class="single-portfolio-wrapper">
-       <div class="row">
+       <div class="row" >
         <div class="col-md-8 col-sm-8">
           <h1>Symptom Checker: CareConnect</h1>
           <span class="info">Visual/UX Design, User testing, User research</span>
@@ -171,7 +210,7 @@ Code adapted from http://elitefingers.com/
     <div class="single-project-slider"> 
 
 
-      <div class = "row project-description">
+      <div class = "row project-description" id="section2">
         <div class="col-md-4 col-sm-12">
           <span class="subtitle">01 / Research and insights</span>
         </div>
@@ -183,10 +222,28 @@ Code adapted from http://elitefingers.com/
 
       <img src="https://miro.medium.com/max/5680/1*-sAuRho5FYUmJq3jh2uo7Q.png" width="100%">
 
-      
-      <div class = "row project-description">
+              <br><br><br><br>
+
+        <div class = "row project-description" id="section4">
         <div class="col-md-4 col-sm-12">
-          <span class="subtitle"> 02 / Competitive Analysis</span>
+          <span class="subtitle"> 02 / Audience</span>
+        </div>
+        <div class="col-md-7 col-sm-12">
+          <p>When this idea was originally pitched to me, Dr. Li wanted to target 18-50 year olds. I felt that the 
+
+            </p>
+          </div>
+        </div>
+
+        <div class = "row">
+          <div class="col-md-4 col-sm-12"></div>
+              <div class="col-md-7 col-sm-12">
+            <img src="img/CareConnect/audience.png" style = "max-height: 800px" width="100%">
+          </div>
+        </div>
+      <div class = "row project-description" id = "section3">
+        <div class="col-md-4 col-sm-12">
+          <span class="subtitle"> 03 / Competitive Analysis</span>
         </div>
         <div class="col-md-7 col-sm-12">
           <p>With Dr. Li and her team, we did a competitive analysis on the currently existing symptom checker apps using her medical expertise and my experience with analyzing user needs and user journeys. We noted many apps such as WebMD and K Health understand  much medical knowledge for it to be easy to digest. 
@@ -201,31 +258,7 @@ Code adapted from http://elitefingers.com/
           </div>
         </div>
 
-        <br><br><br><br>
 
-        <div class = "row project-description">
-        <div class="col-md-4 col-sm-12">
-          <span class="subtitle"> 02 / Audience</span>
-        </div>
-        <div class="col-md-7 col-sm-12">
-          <p>When this idea was originally pitched to me, Dr. Li wanted to target 18-50 year olds. I felt that the 
-
-            <!-- <ul>
-                <li>WebMD is very streamlined/easy to use, but asks for far too little details from the user and gives far too much information to the point where it is rather indigestable for the user. </li>
-                <li>Family Doctor didn't allow much correction for users, which we noted. It also gave diagnosis immediately (almost like live diagnosis), but it wans't really editable.</li>
-                <li>Your.MD uses a chatbot which is a different approach but seems to have very inaccurate AI analysis, and often gives inaccurate medical information. The userflow is streamlined but doesn't offer much room to correct its mistake whch can cause the user frustration.</li>
-                <li>K health was different in that it used crowdsourced data. It's similar to a chatbot system where it prompted questions and asked for answers but it was more like a questionaire than true AI. It was also long and winded but didn't give the users much information about the actual illness in the end. </li>
-              </ul> -->
-            </p>
-          </div>
-        </div>
-
-        <div class = "row">
-          <div class="col-md-4 col-sm-12"></div>
-              <div class="col-md-7 col-sm-12">
-            <img src="img/CareConnect/audience.png" style = "max-height: 800px" width="100%">
-          </div>
-        </div>
 
         <br><br><br><br>
 
@@ -236,20 +269,6 @@ Code adapted from http://elitefingers.com/
 
         <br><br><br>
 
-        <div class="row">
-        <div class="col-md-4 col-sm-12">
-          <span class="subtitle">1. Searching Symptoms</span>
-          <p>Simplest for users to use and for developers to make. </p>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <span class="subtitle">2. Symptom details</span>
-          <p>Adding information to each symptom easily.</p>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <span class="subtitle">3. Actual Diagnosis </span>
-          <p>What medical information should be included, what shouldn’t?</p>
-        </div>
-      </div>
 
 
         <div class = "row project-description">
