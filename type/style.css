@@ -153,7 +153,8 @@ h2 {
 }
 
 h3 {
-    font-family: playfair_displayregular;
+    font-family: playfair_displayitalic;
+    font-size: 120px;
 }
 
 h4 {
@@ -170,6 +171,7 @@ h5 {
 
 h6 {
     font-family: spartanthin;
+    font-size: 120px;
 }
 
 
