@@ -493,7 +493,7 @@ height: 18em;*/
         </div>
         <div class="row">
             <div class="col-md-10">
-                <img src="kitchen.gif" class="img-fluid" alt="Responsive image">
+                <img id = "myImage" src="kitchen.gif" class="img-fluid" alt="Responsive image">
             </div>
 
             <div class="col-md-2">
@@ -504,18 +504,18 @@ height: 18em;*/
                 </div>
                 <div class="row" style="margin-top: 1em">
                     <div class="col-md-6">
-                        <button type="button" class="btn btn-outline-dark custom">Garden</button>
+                        <button type="button" class="btn btn-outline-dark custom" onclick="document.getElementById('myImage').src='kitchen.gif'">Kitchen</button>
                     </div>
                     <div class="col-md-6">
-                        <button type="button" class="btn btn-outline-dark custom">Indoor</button>
+                      <button type="button" class="btn btn-outline-dark custom" onclick="document.getElementById('myImage').src='greenhouse.png'">Garden</button>
                     </div>
                 </div>
                 <div class="row" style="margin-top: .5em">
                     <div class="col-md-6">
-                        <button type="button" class="btn btn-outline-dark custom">Cafe</button>
+                        <button type="button" class="btn btn-outline-dark custom" onclick="document.getElementById('myImage').src='bedroom.png'">Bedroom</button>
                     </div>
                     <div class="col-md-6">
-                        <button type="button" class="btn btn-outline-dark custom">Kitchen</button>
+                        <button type="button" class="btn btn-outline-dark custom" onclick="document.getElementById('myImage').src='reading.png'">Reading</button>
                     </div>
 
                 </div>
